@@ -5,10 +5,16 @@
 [![GitHub forks](https://img.shields.io/github/forks/giuroperto/megahack-front/)](https://github.com/giuroperto/megahack-front//network)
 
 # **NAME OF THE PROJECT** (PROTOTYPE)
+
+## Challenge
+
+The challenge proposed by SEBRAE and MCTIC (Ministry of Science, Technology, Innovations and Communications) was focused in the XXX sector and questioned how could companies conquer back their consumers after quarantine. Thus, our group came up with ideas of what solutions could contribute with the consumers' experiences and the success of businesses in the catering industry post COVID-19, and the final solution we came up with was as it follows.
+
+## Project
 Habilitas is a **tool to help people who lost their jobs during the COVID pandemy** who are now facing challenges to find a new one. We aim to provide a high quality platform where they can take use technology in their favour to expand their opportunities and leverage their capabilities as a professional. 
 
-This is the prototype for the solution we developed for the CORONATHON hackathon which was promoted by ENAP and had Microsoft as a partner.
-(https://coronathon.enap.gov.br/)
+This is the prototype for the solution we developed for the MEGA HACK 3.0 hackathon which was promoted by Shawee and had Gr1d, Github, Zenvia, Sai do Papel and Tryne as partners.
+(https://www.megahack.com.br/)
 
 It is a **responsive website** to make it easier to access from all types of devices and screen sizes, and it was created using React.
 
@@ -30,14 +36,9 @@ Habilitas consists in a platform that connects people looking for jobs and the c
 - ABOUT US :memo: (infos about the Habilitas company)
 - CONTACT :email: (page to get in contact with Habilitas)
 
-## Next Improvements / Feautures
+## Next Improvements / Features
 
-- [ ] Create the final registration form
-- [ ] Add all the back-end of the application, including authentication
-- [ ] Get the relevant data about the market to create the personalized dashboards according to the job-seeker's professional history and objectives
-- [ ] Create the page to show all job postings and include a filter where the job-seeker can filter only the opportunities that are relevant to his/her profile
-- [ ] Integration with the education platforms
-- [ ] Design a special area where the job-seeker can get in contact with a mentor who will help him/her through their journey of getting a job and fulfilling their professional objectives
+- [ ] Write down next features
 
 ## Technologies
 
