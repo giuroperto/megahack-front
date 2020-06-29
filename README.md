@@ -1,68 +1,68 @@
-![AppVeyor](https://img.shields.io/appveyor/build/giuroperto/megahack-front)
-![GitHub top language](https://img.shields.io/github/languages/top/giuroperto/megahack-front)
-[![GitHub license](https://img.shields.io/github/license/giuroperto/megahack-front)](https://github.com/giuroperto/megahack-front/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/giuroperto/megahack-front/)](https://github.com/giuroperto/megahack-front/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/giuroperto/megahack-front/)](https://github.com/giuroperto/megahack-front//network)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# **NAME OF THE PROJECT** (PROTOTYPE)
+## Available Scripts
 
-## Challenge
+In the project directory, you can run:
 
-The challenge proposed by SEBRAE and MCTIC (Ministry of Science, Technology, Innovations and Communications) was focused in the XXX sector and questioned how could companies conquer back their consumers after quarantine. Thus, our group came up with ideas of what solutions could contribute with the consumers' experiences and the success of businesses in the catering industry post COVID-19, and the final solution we came up with was as it follows.
+### `npm start`
 
-## Project
-Habilitas is a **tool to help people who lost their jobs during the COVID pandemy** who are now facing challenges to find a new one. We aim to provide a high quality platform where they can take use technology in their favour to expand their opportunities and leverage their capabilities as a professional. 
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-This is the prototype for the solution we developed for the MEGA HACK 3.0 hackathon which was promoted by Shawee and had Gr1d, Github, Zenvia, Sai do Papel and Tryne as partners.
-(https://www.megahack.com.br/)
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-It is a **responsive website** to make it easier to access from all types of devices and screen sizes, and it was created using React.
+### `npm test`
 
-#### App URL: https://giuroperto.github.io/coronathon/
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-![](/public/website.png)
+### `npm run build`
 
-## The App
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Habilitas consists in a platform that connects people looking for jobs and the current opportunities in a diversity of companies. It is based on a system that already exists (SINE) but with some improvements regarding, specially, the standardisation of the data sent by both companies and job-seekers, and the creation of a page with a personalized dashboard showing the current skills the job-seeker possesses and the skills he/she should focus on developing for the job they are looking for. In the platform, it will also be possible to get suggestions of courses and trainings in order to develop the skills the professional is lacking and get in contact with a mentor that will help him/her through the journey of finding a job. Finally, it will also be possible to filter all the job postings in a manner that fits the profile of who is looking for the job.
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-#### Step-by-step
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- HOME :house: (contains two links, one for the companies to create a job post, which at this moment is just a redirect to the current existing SINE website, and another for the job-seekers to register their profiles)
-- REGISTER A PROFILE :heavy_plus_sign: (register form for people seeking a job, currently with only the main topics of what it will contain)
-- LOGIN :arrow_right: (login screen for the job-seekers already registered in this platform. Mind that as it is only a prototype there is no authentication yet, so any value input in the fields is going to get accepted and will allow you to get to the internal pages -> when you click ENTRAR, you will get redirected to the dashboard)
-- DASHBOARD :bar_chart: (personalized dashboard based on the job-seeker's profile assessment in terms of area/sector/opportunity intended and his/her main skills and competencies. It will also contain infos related to the main qualifications needed for the person to adjust to the market and a link to another page where he/she will find suggestions of courses and trainings designed specially based on his/her profile.)
-- SUGGESTION OF COURSES :books: (page that contains suggestion of important courses and trainings for the person's professional development, aiming to adjust ou help this professional to become relevant to the labor market. It will show a vast diversity of themes but all in accordance to the person's profile)
-- ABOUT US :memo: (infos about the Habilitas company)
-- CONTACT :email: (page to get in contact with Habilitas)
+### `npm run eject`
 
-## Next Improvements / Features
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-- [ ] Write down next features
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Technologies
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-#### Back-end
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-#### Front-end
+## Learn More
 
-- JavaScript
-- React
-- CSS
-- HTML
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Contributing
->This is an open-source and free software. Please, feel free to collaborate =).
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-1. Fork it 
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
+### Code Splitting
 
-## Our team
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-**NAME OF THE PROJECT** was created by:
+### Analyzing the Bundle Size
 
-|<img src="https://media-exp1.licdn.com/dms/image/C5603AQF_vneV9MrXdQ/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=XBMkASOtLJdpiFU6nHFpUPuXD9BI_cJmF2iqO9vHbYg" width="115"><br/> [**Fernando Borrelli**](https://www.linkedin.com/in/fernando-borrelli/) |<img src="https://media-exp1.licdn.com/dms/image/C4D03AQEidRW39hPwvA/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=GrV9ioZBp9uyX3Zz7uj_uC-FY-wVuOTspSB8dRRCWUU" width="115"><br/> [**Giulia Roperto**](https://www.linkedin.com/in/giuliaroperto/) |<img src="https://media-exp1.licdn.com/dms/image/C4E03AQFfqw6srZSseA/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=wfs1wqPzJqDVzOM8EupZydLhObzkMCN9Uv5ImgPhzyU" width="115"><br/> [**Hugo Habl**](https://www.linkedin.com/in/hugo-habl/) |<img src="https://media-exp1.licdn.com/dms/image/C4D03AQHMBjcsiXDK5g/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=k2rJLVD2UPBVYAON_BFNA4_MRyAdZR1BZXmrEi_Ppac" width="115"><br/> [**Jorge Sato**](https://www.linkedin.com/in/jorge-sato-81969522/) |<img src="https://media-exp1.licdn.com/dms/image/C4D03AQHinh-R2X_Qkg/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=-vPNDnJtNhFN28M8ElRoumQux1K8wJ_jxZ1DNYGpsUg" width="115"><br/> [**Vinícius Salinas**](https://www.linkedin.com/in/vinicius-salinas/) |
-|---|---|---|---|---|
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
