@@ -8,7 +8,7 @@
 
 ## Challenge
 
-The challenge proposed by SEBRAE and MCTIC (Ministry of Science, Technology, Innovations and Communications) was focused in the XXX sector and questioned how could companies conquer back their consumers after quarantine. Thus, our group came up with ideas of what solutions could contribute with the consumers' experiences and the success of businesses in the catering industry post COVID-19, and the final solution we came up with was as it follows.
+The challenge proposed by SEBRAE and MCTIC (Ministry of Science, Technology, Innovations and Communications) was focused in the foodservice sector and questioned how could companies conquer back their consumers after quarantine. Thus, our group came up with ideas of what solutions could contribute with the consumers' experiences and the success of businesses in the catering industry post COVID-19, and the final solution we came up with was as it follows.
 
 ## Project
 Habilitas is a **tool to help people who lost their jobs during the COVID pandemy** who are now facing challenges to find a new one. We aim to provide a high quality platform where they can take use technology in their favour to expand their opportunities and leverage their capabilities as a professional. 
