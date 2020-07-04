@@ -7,7 +7,7 @@ import sorveteImg from '../../assets/img/sorvete.jpeg';
 const Discounts = () => {
   return(
       <div className="discounts-container">
-            <Link to='/'>
+            <Link className='return-btn' to='/'>
               <FiChevronLeft size="20" color="#fff" />
             </Link>
 
@@ -25,7 +25,7 @@ const Discounts = () => {
               <img src={sorveteImg} alt="sorvete-desconto"/>
               <h3>Na compra de 1, ganhe outro!</h3>
               <p>Lary's Sorveteria • 60 pontos</p>
-            </div>
+            </div>  
 
       </div>
   )
