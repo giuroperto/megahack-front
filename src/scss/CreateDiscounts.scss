@@ -24,7 +24,7 @@
     padding-top: 10px;
   }
   
-  h2 {
+  .create-discounts--container h2 {
     @extend%app-name;
     font-size: 13px;
     text-align: center;
@@ -39,7 +39,7 @@
   .client-name h3 {
     @extend %p-weight;
     font-size: 20px;
-    padding-bottom: 10px;
+    padding: 70px 0 10px 0;
     line-height: 30px;
   }
 
@@ -53,7 +53,7 @@
     line-height: 15px;
   }
 
-  h4 {
+  .create-discounts--container h4 {
     font-family: 'Zilla Slab', serif;
     padding: 30px 0 20px 0;
     margin-left: 50px;
@@ -62,19 +62,19 @@
     font-weight: 300;
   }
 
-  h4 > span {
+  .create-discounts--container h4 > span {
     font-weight: bold;
   }
 
-  form > div{
+  .form > div{
     margin-bottom: 23px;
   }
 
-  label {
+  .form label {
     font-size: 11px;
   }
 
-  label > span {
+  .form label > span {
     font-weight: 100;
   }
 
@@ -84,16 +84,16 @@
     border: none;
   }
 
-  select {
+  .form select {
     @extend %input-area;
   }
 
-  input {
+  .form input {
     @extend %input-area;
     height: 21px;
   }
 
-  textarea {
+  .form textarea {
     @extend %input-area;
     height: 78px;
   } 
@@ -156,7 +156,12 @@
     margin-right: 15px;
   }
 
-  a:hover {
+
+  .create-discounts--container a {
+    text-decoration: none;
+  }
+
+  .create-discounts--container a:hover {
     color: #fff;
   }
 
@@ -165,6 +170,7 @@
     font-size: 10px;
     text-align: center;
     padding-top: 20px;
+    color: #fff;
   }
 
   .all-itens span {

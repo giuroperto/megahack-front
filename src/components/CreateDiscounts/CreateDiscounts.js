@@ -73,7 +73,7 @@ const CreateDiscounts = () => {
         </button>
       </form>
       
-      <Link to='/'>
+      <Link to='/discounts'>
       <p className="all-itens">
         ou <span>veja todos os itens</span>
       </p>

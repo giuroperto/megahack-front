@@ -1,0 +1,59 @@
+@media only screen and (max-width: 787px) {
+  $base-yellow: #FAAF40;
+
+  .discounts-container{
+    padding: 20px 0 0 32px;
+    background: #000;
+    height: 100vh;
+    color: #fff;
+  }
+
+  .discounts-container a{
+    border-radius: 50%;
+    background-color: $base-yellow;
+    padding: 8px 5px 2px 5px;
+  }
+
+  .discounts-container h4 {
+    padding-top: 24px;
+    padding-bottom: 17px;
+  }
+
+  .discounts-container h2 {
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-bottom: 24px;
+  }
+
+  .discounts-container h2 > span {
+    font-weight: bold;
+  }
+
+  .img-box img{
+    width: 300px;
+    height: 120px;
+    border-radius: 8px;
+  }
+
+  .img-box h3 {
+    font-size: 14px;
+  }
+
+  .img-box p {
+    font-size: 11px;
+  }
+
+  .img-box:after {
+    content: '';
+    display: block;
+    width: 310px;
+    height: 1px;
+    background: $base-yellow;
+    margin: 21px 0 20px -6px;
+  }
+  
+
+
+}
