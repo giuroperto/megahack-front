@@ -5,6 +5,8 @@ import SocialLogin from './components/SocialLogin/SocialLogin';
 import CreateDiscounts from './components/CreateDiscounts/CreateDiscounts';
 import Discounts from './components/Discounts/Discounts';
 import CreateRestaurants from './components/CreateRestaurants/CreateRestaurants';
+import UserProfile from './components/UserProfile/UserProfile';
+
 
 
 const Routes = () => {
@@ -16,6 +18,7 @@ const Routes = () => {
         <Route path='/create-discounts' component={CreateDiscounts} />
         <Route path='/discounts' component={Discounts} />
         <Route path='/create-restaurants' component={CreateRestaurants} />
+        <Route path='/user-profile' component={UserProfile} />
       </Switch>
     </BrowserRouter>
   )

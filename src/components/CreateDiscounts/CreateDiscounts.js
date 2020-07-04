@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const CreateDiscounts = () => {
   return (
     <div className="create-discounts--container">
-      <h2>Nome do App</h2>
+      <h2 className='app-name'>Nome do App</h2>
       <div className="client-name">
         <h3>
           E aí, <span>Jorge Santos</span>!
