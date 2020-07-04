@@ -1,0 +1,60 @@
+@media only screen and (max-width: 787px) {
+  .user-text-info, .points-header, .points-table td:nth-child(even), .user-nav p {
+    font-weight: 300; }
+  .points-header span, .points-table td:nth-child(odd), .user-nav a {
+    font-weight: 800; }
+  .user-profile--container {
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    padding-top: 10px; }
+  .user-info-box {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 10px 0; }
+  .user-info-box img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1px solid #FAAF40; }
+  .user-text-info {
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 24px; }
+  .user-info-box p {
+    font-size: 10px; }
+  .user-info-box p + p {
+    padding-top: 10px; }
+  .points-header {
+    font-size: 24px;
+    text-align: center;
+    padding: 24px 0 32px 0;
+    font-family: 'Zilla Slab', serif; }
+  .points-table {
+    padding: 0 0 33px 33px; }
+  .points-table td:nth-child(odd) {
+    padding: 0 10px 10px 0;
+    font-size: 12px;
+    border-right: #FAAF40 solid 2px; }
+  .points-table td:nth-child(even) {
+    padding-left: 10px;
+    font-size: 10px; }
+  .user-nav {
+    text-align: center;
+    padding-bottom: 25px; }
+  .user-nav p {
+    font-size: 10px;
+    width: 205px;
+    margin: 0 auto; }
+  .user-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px; }
+  .user-nav a:after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 1px;
+    background: #FAAF40;
+    margin: 0 auto; } }

@@ -1,9 +1,4 @@
 @media only screen and (max-width: 787px) {
-  .create-discounts--container h2 {
-    font-family: 'Zilla Slab', serif;
-    color: #FAAF40;
-    font-weight: bold;
-    text-transform: uppercase; }
   .client-name h3, .client-name p, .all-itens {
     font-weight: 300; }
   .client-name span, .all-itens span {
@@ -13,10 +8,6 @@
     background-color: #000;
     color: #fff;
     padding-top: 10px; }
-  .create-discounts--container h2 {
-    font-size: 13px;
-    text-align: center;
-    padding: 0; }
   .client-name {
     margin-left: 50px;
     width: 267px; }

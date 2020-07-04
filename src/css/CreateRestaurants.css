@@ -21,7 +21,7 @@
     font-size: 11px; }
   .form-new-restaurant label > span {
     font-weight: 100; }
-  form div:nth-child(4) {
+  .form-new-restaurant div:nth-child(4) {
     padding-bottom: 60px; }
   .form-new-restaurant input, .form-new-restaurant textarea {
     width: 232px;
