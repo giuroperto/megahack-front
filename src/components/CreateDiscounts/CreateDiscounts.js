@@ -1,7 +1,7 @@
 import React from "react";
 import "../../css/CreateDiscounts.css";
 import { FiPlusCircle, FiCheck } from "react-icons/fi";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const CreateDiscounts = () => {
   return (
@@ -22,28 +22,27 @@ const CreateDiscounts = () => {
       </h4>
 
       <form className="form">
-
-      <div>
-        <label id='restaurant-label'>
-          Estabelecimento<span>*</span>
-          <select name="restaurants" id="restaurants" >
-            <option value="" selected disabled hidden></option>
-            <option value="bar">Bar do Zé</option>
-            <option value="forneria">Forneria do Chico</option>
-            <option value="hamburgueria">Hamburgueria do Julio</option>
-          </select>
-        </label>
-      </div>
+        <div>
+          <label id="restaurant-label">
+            Estabelecimento<span>*</span>
+            <select name="restaurants" id="restaurants">
+              <option value="" selected disabled hidden></option>
+              <option value="bar">Bar do Zé</option>
+              <option value="forneria">Forneria do Chico</option>
+              <option value="hamburgueria">Hamburgueria do Julio</option>
+            </select>
+          </label>
+        </div>
 
         <div>
-          <label id='title-label'>
+          <label id="title-label">
             Título<span>*</span>
             <input type="text" required />
           </label>
         </div>
 
         <div>
-          <label id='picture-label'>
+          <label id="picture-label">
             Foto<span>*</span>{" "}
             <button>
               <FiPlusCircle size="18" color="#FAAF40" />
@@ -55,28 +54,28 @@ const CreateDiscounts = () => {
           <label>
             Descrição<span>*</span>
           </label>
-            <textarea type="text" required />
+          <textarea type="text" required />
         </div>
 
         <div>
-          <label id='valid-label'>
+          <label id="valid-label">
             Validade<span>*</span>
             <input type="text" required />
           </label>
         </div>
 
-        <button className="btn" type="submit">
+        <button className="submit-btn" type="submit">
           <p>
             <span>Cadastrar</span> item
           </p>
           <FiCheck size="16" color="#000" />
         </button>
       </form>
-      
-      <Link to='/discounts'>
-      <p className="all-itens">
-        ou <span>veja todos os itens</span>
-      </p>
+
+      <Link to="/discounts">
+        <p className="all-itens">
+          ou <span>veja todos os itens</span>
+        </p>
       </Link>
     </div>
   );

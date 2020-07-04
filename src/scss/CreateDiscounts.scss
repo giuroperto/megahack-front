@@ -39,7 +39,7 @@
   .client-name h3 {
     @extend %p-weight;
     font-size: 20px;
-    padding: 70px 0 10px 0;
+    padding: 50px 0 10px 0;
     line-height: 30px;
   }
 
@@ -127,33 +127,6 @@
 
   #restaurant-label span, #title-label span, #picture-label span, #textarea-label span, #valid-label span {
     padding-right: 8px;
-  }
-
-  .btn {
-    background: #FAAF40;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 283px;
-    height: 51px;
-    border: none;
-    border-radius: 8px 0px 0px 8px;
-    margin-left: 77px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-  }
-
-  .btn p {
-    @extend %p-weight;
-    margin-left: 25px;
-  }
-
-  .btn span {
-    @extend %span-weight;
-  }
-
-  .btn svg {
-    margin-right: 15px;
   }
 
 
