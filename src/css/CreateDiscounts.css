@@ -1,5 +1,5 @@
 @media only screen and (max-width: 787px) {
-  h2 {
+  .create-discounts--container h2 {
     font-family: 'Zilla Slab', serif;
     color: #FAAF40;
     font-weight: bold;
@@ -13,7 +13,7 @@
     background-color: #000;
     color: #fff;
     padding-top: 10px; }
-  h2 {
+  .create-discounts--container h2 {
     font-size: 13px;
     text-align: center;
     padding: 0; }
@@ -22,33 +22,33 @@
     width: 267px; }
   .client-name h3 {
     font-size: 20px;
-    padding-bottom: 10px;
+    padding: 70px 0 10px 0;
     line-height: 30px; }
   .client-name p {
     font-size: 10px;
     line-height: 15px; }
-  h4 {
+  .create-discounts--container h4 {
     font-family: 'Zilla Slab', serif;
     padding: 30px 0 20px 0;
     margin-left: 50px;
     font-size: 20px;
     line-height: 24px;
     font-weight: 300; }
-  h4 > span {
+  .create-discounts--container h4 > span {
     font-weight: bold; }
-  form > div {
+  .form > div {
     margin-bottom: 23px; }
-  label {
+  .form label {
     font-size: 11px; }
-  label > span {
+  .form label > span {
     font-weight: 100; }
-  select, input, textarea {
+  .form select, .form input, .form textarea {
     width: 232px;
     border-radius: 1px 0px 0px 1px;
     border: none; }
-  input {
+  .form input {
     height: 21px; }
-  textarea {
+  .form textarea {
     height: 78px; }
   #restaurant-label {
     padding-left: 22px; }
@@ -83,11 +83,14 @@
     margin-left: 25px; }
   .btn svg {
     margin-right: 15px; }
-  a:hover {
+  .create-discounts--container a {
+    text-decoration: none; }
+  .create-discounts--container a:hover {
     color: #fff; }
   .all-itens {
     font-size: 10px;
     text-align: center;
-    padding-top: 20px; }
+    padding-top: 20px;
+    color: #fff; }
   .all-itens span {
     color: #FAAF40; } }

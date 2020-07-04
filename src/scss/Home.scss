@@ -1,6 +1,6 @@
 @media only screen and (max-width: 787px) { 
 
-  h1 {
+  .home-container h1 {
     font-family: 'Zilla Slab', serif;
     color: #FAAF40;
     font-size: 30px;
@@ -8,7 +8,7 @@
     text-transform: uppercase;
   } 
 
-  h2 {
+  .home-container h2 {
     color: #fff;
     font-size: 11px;
     font-weight: 300;
@@ -17,7 +17,7 @@
     margin-bottom: 70px;
   }
 
-  a {
+  .home-container a {
     color: #fff;
     font-size: 15px;
     margin-bottom: 5px;
@@ -25,11 +25,11 @@
     text-decoration: none;
   }
 
-  a:hover {
+  .home-container a:hover {
     color: #FAAF40;
   }
 
-  a + a {
+  .home-container a + a {
     font-weight: 300;
   }
 
