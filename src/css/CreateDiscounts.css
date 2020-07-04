@@ -1,0 +1,93 @@
+@media only screen and (max-width: 787px) {
+  h2 {
+    font-family: 'Zilla Slab', serif;
+    color: #FAAF40;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .client-name h3, .client-name p, .btn p, .all-itens {
+    font-weight: 300; }
+  .client-name span, .btn span, .all-itens span {
+    font-weight: 800; }
+  .create-discounts--container {
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    padding-top: 10px; }
+  h2 {
+    font-size: 13px;
+    text-align: center;
+    padding: 0; }
+  .client-name {
+    margin-left: 50px;
+    width: 267px; }
+  .client-name h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    line-height: 30px; }
+  .client-name p {
+    font-size: 10px;
+    line-height: 15px; }
+  h4 {
+    font-family: 'Zilla Slab', serif;
+    padding: 30px 0 20px 0;
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300; }
+  h4 > span {
+    font-weight: bold; }
+  form > div {
+    margin-bottom: 23px; }
+  label {
+    font-size: 11px; }
+  label > span {
+    font-weight: 100; }
+  select, input, textarea {
+    width: 232px;
+    border-radius: 1px 0px 0px 1px;
+    border: none; }
+  input {
+    height: 21px; }
+  textarea {
+    height: 78px; }
+  #restaurant-label {
+    padding-left: 22px; }
+  #title-label {
+    padding-left: 85px; }
+  #picture-label {
+    padding-left: 85px; }
+  #picture-label > button {
+    background: none;
+    border: none;
+    padding-left: 5px; }
+  #textarea-label {
+    display: flex;
+    padding-left: 60px; }
+  #valid-label {
+    padding-left: 66px; }
+  #restaurant-label span, #title-label span, #picture-label span, #textarea-label span, #valid-label span {
+    padding-right: 8px; }
+  .btn {
+    background: #FAAF40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 283px;
+    height: 51px;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    margin-left: 77px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px; }
+  .btn p {
+    margin-left: 25px; }
+  .btn svg {
+    margin-right: 15px; }
+  a:hover {
+    color: #fff; }
+  .all-itens {
+    font-size: 10px;
+    text-align: center;
+    padding-top: 20px; }
+  .all-itens span {
+    color: #FAAF40; } }
