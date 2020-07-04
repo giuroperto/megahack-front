@@ -1,0 +1,154 @@
+
+
+@media only screen and (max-width: 787px) { 
+  
+  %app-name {
+    font-family: 'Zilla Slab', serif;
+      color: #FAAF40;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+
+  %p-weight {
+    font-weight: 300;
+  }
+
+  %span-weight {
+    font-weight: 800;
+  }
+
+  .create-discounts--container {
+    height: 100vh;
+    background-color: #000;
+    color:#fff;
+    padding-top: 10px;
+  }
+  
+  .create-discounts--container h2 {
+    @extend%app-name;
+    font-size: 13px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .client-name {
+    margin-left: 50px;
+    width: 267px;
+  }
+
+  .client-name h3 {
+    @extend %p-weight;
+    font-size: 20px;
+    padding: 50px 0 10px 0;
+    line-height: 30px;
+  }
+
+  .client-name span {
+    @extend %span-weight;
+  }
+
+  .client-name p {
+    @extend %p-weight;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .create-discounts--container h4 {
+    font-family: 'Zilla Slab', serif;
+    padding: 30px 0 20px 0;
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  .create-discounts--container h4 > span {
+    font-weight: bold;
+  }
+
+  .form > div{
+    margin-bottom: 23px;
+  }
+
+  .form label {
+    font-size: 11px;
+  }
+
+  .form label > span {
+    font-weight: 100;
+  }
+
+  %input-area{
+    width: 232px;
+    border-radius: 1px 0px 0px 1px;
+    border: none;
+  }
+
+  .form select {
+    @extend %input-area;
+  }
+
+  .form input {
+    @extend %input-area;
+    height: 21px;
+  }
+
+  .form textarea {
+    @extend %input-area;
+    height: 78px;
+  } 
+    
+  #restaurant-label {
+    padding-left: 22px;
+  }
+
+  #title-label {
+    padding-left: 85px;
+  }
+
+  #picture-label {
+    padding-left: 85px;
+  }
+
+  #picture-label > button {
+    background: none;
+    border: none;
+    padding-left: 5px;
+  }
+
+  #textarea-label{
+    display: flex;
+    padding-left: 60px;
+  }
+
+  #valid-label {
+    padding-left: 66px;
+  }
+
+  #restaurant-label span, #title-label span, #picture-label span, #textarea-label span, #valid-label span {
+    padding-right: 8px;
+  }
+
+
+  .create-discounts--container a {
+    text-decoration: none;
+  }
+
+  .create-discounts--container a:hover {
+    color: #fff;
+  }
+
+  .all-itens {
+    @extend %p-weight;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+  }
+
+  .all-itens span {
+    @extend %span-weight;
+    color: #FAAF40;
+  }
+
+}

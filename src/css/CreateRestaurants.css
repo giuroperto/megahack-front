@@ -1,0 +1,52 @@
+@media only screen and (max-width: 787px) {
+  .create-restaurants--container {
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    padding-top: 20px; }
+  .create-restaurants--container h4 {
+    font-family: 'Zilla Slab', serif;
+    padding: 40px 0 60px 0;
+    margin-left: 50px;
+    font-size: 26px;
+    line-height: 24px;
+    font-weight: 300; }
+  .create-restaurants--container a {
+    margin-left: 45px; }
+  .create-restaurants--container h4 > span {
+    font-weight: bold; }
+  .form-new-restaurant > div {
+    margin-bottom: 30px; }
+  .form-new-restaurant label {
+    font-size: 11px; }
+  .form-new-restaurant label > span {
+    font-weight: 100; }
+  form div:nth-child(4) {
+    padding-bottom: 60px; }
+  .form-new-restaurant input, .form-new-restaurant textarea {
+    width: 232px;
+    border-radius: 1px 0px 0px 1px;
+    border: none; }
+  .form-new-restaurant input {
+    height: 21px; }
+  .form-new-restaurant textarea {
+    height: 58px; }
+  #name-label {
+    padding-left: 82px; }
+  #address-label {
+    padding-left: 63px;
+    display: flex; }
+  #picture-label {
+    padding-left: 85px; }
+  #menu-label {
+    padding-left: 57px; }
+  #picture-label > button, #menu-label > button {
+    background: none;
+    border: none;
+    padding-left: 5px; }
+  #name-label span, #picture-label span, #menu-label span, #address-label span {
+    padding-right: 8px; }
+  #name-label input::placeholder, #address-label textarea::placeholder {
+    padding-left: 4px;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif; } }
