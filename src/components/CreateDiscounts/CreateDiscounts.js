@@ -44,10 +44,9 @@ const CreateDiscounts = () => {
     const { owner, title, description, picture, expiration } = formData;
     const data = { owner, title, description, picture, expiration };
 
-    console.log(data)
+    console.log(data);
     try{
       await apiAccess.post('add-discount', data);
-      //TODO redirect para todos descontos
       history.push('/discounts');
     }catch(err){
       console.log(err);
@@ -56,25 +55,18 @@ const CreateDiscounts = () => {
 
   const uploadFile = async (e) => {
     const uploadData = new FormData();
-    console.log(e.target);
-    // try{
-    //   await apiAccess.post('/picture/upload', theFile);
-    // }catch(err){
-    //   console.log(err);
-    // }
+    console.log(e.target.files[0]);
+    uploadData.append("imageUrl", e.target.files[0]);
+    console.log(uploadData);
+    
+    try{
+      const response = await apiAccess.post('/picture/upload', uploadData);
+      console.log(response);
+      setFormData({...formData, picture: response.data.secure_url});
+    }catch(err){
+      console.log(err);
+    }
   };
-
-  // const uploadData = new FormData();
-  //   let { name } = event.target.files[0];
-  //   uploadData.append("imageUrl", event.target.files[0]);
-  //   this.apiEndpoints.handleUpload(uploadData)
-  //   .then(response => {
-  //       this.setState({ picture: response.data.secure_url, pictureName: name });
-  //     })
-  //     .catch(err => {
-  //       console.log("Error while uploading the file: ", err);
-  //     });
-
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
