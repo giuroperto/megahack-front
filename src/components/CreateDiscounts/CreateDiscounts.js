@@ -29,8 +29,28 @@ const CreateDiscounts = () => {
   const history = useHistory();
   const inputFile = useRef(null);
 
+  useEffect(() => {
+    const { name, address, coordinates } = apiAccess.getAllBusinesses();
+    console.log(name, address, coordinates);
+  });
+
+
   const handleClick = () => {
     inputFile.current.click();
+  }
+
+  const handleFileUpload = async (e) => {
+    const fileUploaded = new FormData();
+    let { name } = e.target.files[0];
+    fileUploaded.append("imageUrl", e.target.files[0]);
+
+    try{
+      await this.apiAccess.uploadFile(fileUploaded);
+      setPicture(e.target.value)
+      console.log(picture);
+    }catch(err){
+      console.log(err);
+    }
   }
 
   const handleSubmit = async (e) => {
@@ -85,7 +105,7 @@ const CreateDiscounts = () => {
             Foto<span>*</span>{" "}
             <button onClick={handleClick}>
               <FiPlusCircle size="18" color="#FAAF40" />
-              <input type="file" id="file" ref={inputFile} style={{display: "none"}} value={picture} onChange={e => setPicture(e.target.value)} />
+              <input type="file" id="file" ref={inputFile} style={{display: "none"}} value={picture} onChange={e => handleFileUpload(e)} />
             </button>
           </label>
         </div>
