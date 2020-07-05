@@ -48,7 +48,7 @@ const CreateDiscounts = () => {
     try{
       await apiAccess.post('add-discount', data);
       //TODO redirect para todos descontos
-      history.push('/');
+      history.push('/discounts');
     }catch(err){
       console.log(err);
     }
@@ -112,7 +112,7 @@ const CreateDiscounts = () => {
             <select name="owner" id="owner" value={formData.owner} onChange={handleSelectRestaurant}>
             <option value="0">Selecione seu restaurante</option>
               {owner.map(restaurant => {
-                return <option value={restaurant.name}>{restaurant.name}</option>
+                return <option value={restaurant._id}>{restaurant.name}</option>
               })}
             </select>
             <div>
