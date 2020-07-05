@@ -14,8 +14,7 @@ const CreateDiscounts = () => {
     description: '',
     picture: '',
     expiration: ''
-  })
-
+  });
 
   useEffect(() => {
     apiData();
@@ -25,8 +24,8 @@ const CreateDiscounts = () => {
   const apiData = async () => {
     try {
       const response = await apiAccess.get('/allbusiness');
-      console.log(response.data)
-      setOwner(response.data)
+      console.log(response.data);
+      setOwner(response.data);
     } catch (err) {
       console.log("Error while accessing API Data:", err);
     }
@@ -37,13 +36,13 @@ const CreateDiscounts = () => {
 
   const handleClick = () => {
     inputFile.current.click();
-  }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const { owner, title, description, picture, expiration } = formData;
-    const data = { owner, title, description, picture, expiration }
+    const data = { owner, title, description, picture, expiration };
 
     console.log(data)
     try{
@@ -55,11 +54,32 @@ const CreateDiscounts = () => {
     }
   };
 
+  const uploadFile = async (e) => {
+    const uploadData = new FormData();
+    console.log(e.target);
+    // try{
+    //   await apiAccess.post('/picture/upload', theFile);
+    // }catch(err){
+    //   console.log(err);
+    // }
+  };
+
+  // const uploadData = new FormData();
+  //   let { name } = event.target.files[0];
+  //   uploadData.append("imageUrl", event.target.files[0]);
+  //   this.apiEndpoints.handleUpload(uploadData)
+  //   .then(response => {
+  //       this.setState({ picture: response.data.secure_url, pictureName: name });
+  //     })
+  //     .catch(err => {
+  //       console.log("Error while uploading the file: ", err);
+  //     });
+
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({...formData, [name]: value})
-  }
+  };
 
   const handleSelectRestaurant  = (e) => {
     setFormData({...formData, owner: e.target.value})
@@ -113,7 +133,7 @@ const CreateDiscounts = () => {
             Foto<span>*</span>{" "}
             <button onClick={handleClick}>
               <FiPlusCircle size="18" color="#FAAF40" />
-              <input type="file" name='picture' id="picture" ref={inputFile} style={{display: "none"}} onChange={handleInputChange} />
+              <input type="file" name='picture' id="picture" ref={inputFile} style={{display: "none"}} onChange={uploadFile} />
             </button>
           </label>
         </div>
