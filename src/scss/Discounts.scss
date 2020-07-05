@@ -2,9 +2,9 @@
   $base-yellow: #FAAF40;
 
   .discounts-container{
-    padding: 20px 0 0 32px;
+    padding: 20px 0 30px 32px;
     background: #000;
-    height: 100vh;
+    height: 100%;
     color: #fff;
   }
 
@@ -36,6 +36,7 @@
     height: 120px;
     object-fit: cover;
     border-radius: 8px;
+    margin-top: 20px;
   }
 
   .img-box h3 {
@@ -44,6 +45,7 @@
 
   .img-box p {
     font-size: 11px;
+    padding-bottom: 20px;
   }
 
   .img-box:after {
@@ -52,7 +54,6 @@
     width: 310px;
     height: 1px;
     background: $base-yellow;
-    margin: 21px 0 20px -6px;
   }
   
 
