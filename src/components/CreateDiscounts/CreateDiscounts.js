@@ -6,6 +6,8 @@ import apiAccess from '../services/api-access';
 
 const CreateDiscounts = () => {
 
+  // this.api = new apiAccess();
+
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [expiration, setExpiration] = useState('');
@@ -19,8 +21,8 @@ const CreateDiscounts = () => {
   const apiData = async () => {
     try {
       const response = await apiAccess.get('/allbusiness');
-      console.log(response.data)
-      setOwner(response.data)
+      console.log(response.data);
+      setOwner(response.data);
     } catch (err) {
       console.log("Error while accessing API Data:", err);
     }
@@ -29,41 +31,48 @@ const CreateDiscounts = () => {
   const history = useHistory();
   const inputFile = useRef(null);
 
-  useEffect(() => {
-    const { name, address, coordinates } = apiAccess.getAllBusinesses();
-    console.log(name, address, coordinates);
-  });
+  // useEffect(() => {
+  //   const { name, address, coordinates } = apiAccess.getAllBusinesses();
+  //   console.log(name, address, coordinates);
+  // });
 
 
   const handleClick = () => {
     inputFile.current.click();
-  }
+  };
 
-  const handleFileUpload = async (e) => {
-    const fileUploaded = new FormData();
-    let { name } = e.target.files[0];
-    fileUploaded.append("imageUrl", e.target.files[0]);
+  // const handleFileUpload = async (e) => {
+  //   const fileUploaded = new FormData();
+  //   let { name } = e.target.files[0];
+  //   fileUploaded.append("imageUrl", e.target.files[0]);
 
-    try{
-      await this.apiAccess.uploadFile(fileUploaded);
-      setPicture(e.target.value)
-      console.log(picture);
-    }catch(err){
-      console.log(err);
-    }
-  }
+  //   try{
+  //     await this.apiAccess.uploadFile(fileUploaded);
+  //     setPicture(e.target.value)
+  //     console.log(picture);
+  //   }catch(err){
+  //     console.log(err);
+  //   }
+  // }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try{
-      await apiAccess.post('/adddiscount', { owner, title, description, picture, expiration });
+      await apiAccess.post('/add-discount', { owner, title, description, picture, expiration });
       //TODO redirect para todos descontos
       history.push('/');
     }catch(err){
       console.log(err);
     }
   };
+
+  console.log(title);
+  console.log(description);
+  console.log(expiration);
+  console.log(picture);
+  console.log(owner);
+
   return (
     <div className="create-discounts--container">
       <h2 className='app-name'>Nome do App</h2>
@@ -105,7 +114,7 @@ const CreateDiscounts = () => {
             Foto<span>*</span>{" "}
             <button onClick={handleClick}>
               <FiPlusCircle size="18" color="#FAAF40" />
-              <input type="file" id="file" ref={inputFile} style={{display: "none"}} value={picture} onChange={e => handleFileUpload(e)} />
+              {/* <input type="file" id="file" ref={inputFile} style={{display: "none"}} value={picture} onChange={e => handleFileUpload(e)} /> */}
             </button>
           </label>
         </div>
