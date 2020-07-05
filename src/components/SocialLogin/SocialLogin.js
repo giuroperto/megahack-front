@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import FacebookLogin from 'react-facebook-login';
 import { GoogleLogin } from 'react-google-login';
-import config from '../../config.json';
 
 class Home extends Component {
   constructor(props){
