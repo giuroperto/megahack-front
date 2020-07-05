@@ -1,0 +1,111 @@
+
+
+@media only screen and (max-width: 787px) { 
+  $base-yellow: #FAAF40;
+
+  %p-weight {
+    font-weight: 300;
+  }
+
+  %span-weight {
+    font-weight: 800;
+  }
+
+  .restaurant-profile--container {
+    height: 100vh;
+    background-color: #000;
+    color:#fff;
+    padding-top: 10px;
+  } 
+
+  .restaurant-profile--container a {
+    margin-left: 20px;
+  }
+
+  .restaurant-info-box {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 10px 0;
+  }
+  
+  .restaurant-info-box img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1px solid #FAAF40;
+  }
+  
+  .restaurant-text-info {
+    @extend %p-weight;
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 24px;
+  }
+
+  .restaurant-text-info h3 {
+    @extend %span-weight;
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+  }
+
+  .restaurant-info-box p {
+    font-size: 10px;
+  }
+
+  .restaurant-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 30px 0;
+  }
+
+  .restaurant-nav ul > li > button {
+    background: none;
+    color: #fff;
+    border: none;
+    font-family: 'Zilla Slab', serif;
+    @extend %span-weight;
+    font-size: 16px;
+  }
+
+  .rating {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .rating > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .rating > div > h4 {
+    @extend %p-weight;
+    font-size: 10px;
+    width: 205px;
+  }
+
+  .rating > div > p {
+    @extend %p-weight;
+    font-size: 9px;
+  }
+
+  .rating > div > p > span {
+    @extend %span-weight;
+    font-size: 12px;
+  }
+  
+  .rating:after {
+    content: '';
+    display: block;
+    width: 314px;
+    height: 1px;
+    background: $base-yellow;
+    margin: 0 auto 10px auto;
+    }
+  
+
+}

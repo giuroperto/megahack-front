@@ -6,14 +6,20 @@ import apiAccess from '../services/api-access';
 
 const CreateDiscounts = () => {
 
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
-  const [expiration, setExpiration] = useState('');
-  const [picture, setPicture] = useState('');
+  const [selectedOwner, setSelectedOwner] = useState('');
   const [owner, setOwner] = useState([]);
+  const [formData, setFormData] = useState({
+    owner: '',
+    title: '',
+    description: '',
+    picture: '',
+    expiration: ''
+  })
+
 
   useEffect(() => {
     apiData();
+
   }, []);
 
   const apiData = async () => {
@@ -36,14 +42,32 @@ const CreateDiscounts = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const { owner, title, description, picture, expiration } = formData;
+    const data = { owner, title, description, picture, expiration }
+
+    console.log(data)
     try{
-      await apiAccess.post('/adddiscount', { owner, title, description, picture, expiration });
+      await apiAccess.post('add-discount', data);
       //TODO redirect para todos descontos
       history.push('/');
     }catch(err){
       console.log(err);
     }
   };
+
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({...formData, [name]: value})
+  }
+
+  const handleSelectRestaurant  = (e) => {
+    setFormData({...formData, owner: e.target.value})
+  }
+
+  console.log(formData)
+  console.log(selectedOwner)
+
   return (
     <div className="create-discounts--container">
       <h2 className='app-name'>Nome do App</h2>
@@ -65,18 +89,22 @@ const CreateDiscounts = () => {
         <div>
           <label id="restaurant-label">
             Estabelecimento<span>*</span>
-            <select name="restaurants" id="restaurants">
+            <select name="owner" id="owner" value={formData.owner} onChange={handleSelectRestaurant}>
+            <option value="0">Selecione seu restaurante</option>
               {owner.map(restaurant => {
                 return <option value={restaurant.name}>{restaurant.name}</option>
               })}
             </select>
+            <div>
+
+        </div>
           </label>
         </div>
 
         <div>
           <label id="title-label">
             Título<span>*</span>
-            <input type="text" value={title} onChange={e => setTitle(e.target.value)} required />
+            <input type="text" name='title' id='title' onChange={handleInputChange} required />
           </label>
         </div>
 
@@ -85,7 +113,7 @@ const CreateDiscounts = () => {
             Foto<span>*</span>{" "}
             <button onClick={handleClick}>
               <FiPlusCircle size="18" color="#FAAF40" />
-              <input type="file" id="file" ref={inputFile} style={{display: "none"}} value={picture} onChange={e => setPicture(e.target.value)} />
+              <input type="file" name='picture' id="picture" ref={inputFile} style={{display: "none"}} onChange={handleInputChange} />
             </button>
           </label>
         </div>
@@ -94,13 +122,13 @@ const CreateDiscounts = () => {
           <label>
             Descrição<span>*</span>
           </label>
-          <textarea type="text" required value={description} onChange={e => setDescription(e.target.value)} />
+          <textarea type="text" name='description' id='description' required onChange={handleInputChange} />
         </div>
 
         <div>
           <label id="valid-label">
             Validade<span>*</span>
-            <input type="date" value={expiration} onChange={e => setExpiration(e.target.value)} required />
+            <input type="date" name='expiration' id='expiration' onChange={handleInputChange} required />
           </label>
         </div>
 
