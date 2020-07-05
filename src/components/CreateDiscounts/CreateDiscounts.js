@@ -1,9 +1,36 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "../../css/CreateDiscounts.css";
 import { FiPlusCircle, FiCheck } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import apiAccess from '../services/api-access';
 
 const CreateDiscounts = () => {
+
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+  const [expiration, setExpiration] = useState('');
+  const [picture, setPicture] = useState('');
+  const [owner, setOwner] = useState('');
+
+  const history = useHistory();
+  const inputFile = useRef(null);
+
+  const handleClick = () => {
+    inputFile.current.click();
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try{
+      await apiAccess.addDiscount(title, description, expiration, picture, owner);
+      //TODO redirect para todos descontos
+      history.push('/');
+    }catch(err){
+      console.log(err);
+    }
+  };
+
   return (
     <div className="create-discounts--container">
       <h2 className='app-name'>Nome do App</h2>
@@ -21,7 +48,7 @@ const CreateDiscounts = () => {
         <span>Novo</span> cupom
       </h4>
 
-      <form className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <div>
           <label id="restaurant-label">
             Estabelecimento<span>*</span>
@@ -37,15 +64,16 @@ const CreateDiscounts = () => {
         <div>
           <label id="title-label">
             Título<span>*</span>
-            <input type="text" required />
+            <input type="text" value={title} onChange={e => setTitle(e.target.value)} required />
           </label>
         </div>
 
         <div>
           <label id="picture-label">
             Foto<span>*</span>{" "}
-            <button>
+            <button onClick={handleClick}>
               <FiPlusCircle size="18" color="#FAAF40" />
+              <input type="file" id="file" ref={inputFile} style={{display: "none"}} value={picture} onChange={e => setPicture(e.target.value)} />
             </button>
           </label>
         </div>
@@ -54,13 +82,13 @@ const CreateDiscounts = () => {
           <label>
             Descrição<span>*</span>
           </label>
-          <textarea type="text" required />
+          <textarea type="text" required value={description} onChange={e => setDescription(e.target.value)} />
         </div>
 
         <div>
           <label id="valid-label">
             Validade<span>*</span>
-            <input type="text" required />
+            <input type="date" value={expiration} onChange={e => setExpiration(e.target.value)} required />
           </label>
         </div>
 
