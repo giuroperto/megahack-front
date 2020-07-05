@@ -10,7 +10,21 @@ const CreateDiscounts = () => {
   const [description, setDescription] = useState('');
   const [expiration, setExpiration] = useState('');
   const [picture, setPicture] = useState('');
-  const [owner, setOwner] = useState('');
+  const [owner, setOwner] = useState([]);
+
+  useEffect(() => {
+    apiData();
+  }, []);
+
+  const apiData = async () => {
+    try {
+      const response = await apiAccess.get('/allbusiness');
+      console.log(response.data)
+      setOwner(response.data)
+    } catch (err) {
+      console.log("Error while accessing API Data:", err);
+    }
+  };
 
   const history = useHistory();
   const inputFile = useRef(null);
@@ -43,14 +57,13 @@ const CreateDiscounts = () => {
     e.preventDefault();
 
     try{
-      await apiAccess.addDiscount(title, description, expiration, picture, owner);
+      await apiAccess.post('/adddiscount', { owner, title, description, picture, expiration });
       //TODO redirect para todos descontos
       history.push('/');
     }catch(err){
       console.log(err);
     }
   };
-
   return (
     <div className="create-discounts--container">
       <h2 className='app-name'>Nome do App</h2>
@@ -73,10 +86,9 @@ const CreateDiscounts = () => {
           <label id="restaurant-label">
             Estabelecimento<span>*</span>
             <select name="restaurants" id="restaurants">
-              <option value="" selected disabled hidden></option>
-              <option value="bar">Bar do Zé</option>
-              <option value="forneria">Forneria do Chico</option>
-              <option value="hamburgueria">Hamburgueria do Julio</option>
+              {owner.map(restaurant => {
+                return <option value={restaurant.name}>{restaurant.name}</option>
+              })}
             </select>
           </label>
         </div>
