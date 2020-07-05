@@ -47,13 +47,13 @@ class Home extends Component {
       (
           <div>
               <FacebookLogin
-                  appId={config.FACEBOOK_APP_ID}
+                  appId={process.env.FACEBOOK_APP_ID}
                   autoLoad={false}
                   fields="name,email,picture"
                   callback={this.facebookResponse}
                   icon="fa-facebook" />
               <GoogleLogin
-                  clientId={config.GOOGLE_CLIENT_ID}
+                  clientId={process.env.GOOGLE_CLIENT_ID}
                   buttonText="Login"
                   onSuccess={this.googleResponse}
                   onFailure={this.onFailure}
