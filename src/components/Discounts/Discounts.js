@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '../../css/Discounts.css';
 import { Link } from 'react-router-dom';
 import { FiChevronLeft } from "react-icons/fi";
-import sorveteImg from '../../assets/img/sorvete.jpeg';
 import apiAccess from '../services/api-access';
 
 const Discounts = () => {
@@ -35,12 +34,15 @@ const Discounts = () => {
 
             <h2><span>Descontos</span>, <span>promoções</span>, <span>ofertas</span> e <span>benefícios</span> disponíveis</h2>
 
-            <div className="img-box">
+            
             { discounts.map((el, idx) => {
               console.log(el);
-              return (<><img key={idx} src={el.picture} alt="sorvete-desconto"/><h3>{el.title}</h3><p>{el.owner.name} • 60 pontos</p></>)
+              return (<>
+                <div className="img-box">
+              <img key={idx} src={el.picture} alt="sorvete-desconto"/><h3>{el.title}</h3><p>{el.owner.name} • 60 pontos</p>
+              </div>
+              </>)
             })}
-            </div> 
 
       </div>
   )
