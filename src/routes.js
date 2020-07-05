@@ -6,6 +6,7 @@ import CreateDiscounts from './components/CreateDiscounts/CreateDiscounts';
 import Discounts from './components/Discounts/Discounts';
 import CreateRestaurants from './components/CreateRestaurants/CreateRestaurants';
 import UserProfile from './components/UserProfile/UserProfile';
+import PointRules from './components/PointRules/PointRules';
 
 
 
@@ -19,6 +20,7 @@ const Routes = () => {
         <Route path='/discounts' component={Discounts} />
         <Route path='/create-restaurants' component={CreateRestaurants} />
         <Route path='/user-profile' component={UserProfile} />
+        <Route path='/rules' component={PointRules} />
       </Switch>
     </BrowserRouter>
   )

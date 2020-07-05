@@ -1,0 +1,21 @@
+@media only screen and (max-width: 787px) {
+  .rules--container {
+    background-color: #000;
+    height: 100vh;
+    padding: 20px 31px;
+    color: #fff; }
+  .rules--container h4 {
+    font-family: 'Zilla Slab', serif;
+    font-size: 26px;
+    line-height: 24px;
+    font-weight: 300;
+    padding: 35px 0; }
+  .rules--container span {
+    font-weight: 800; }
+  .rules--container p, li {
+    font-size: 12px; }
+  .rules--container p {
+    padding-bottom: 10px; }
+  .rules--container ul {
+    list-style: none;
+    padding-bottom: 10px; } }
