@@ -44,29 +44,44 @@ const CreateDiscounts = () => {
     const { owner, title, description, picture, expiration } = formData;
     const data = { owner, title, description, picture, expiration };
 
+    const uploadData = new FormData();
+    uploadData.append("imageUrl", picture);
+
     console.log(data);
     try{
+      const pictureUpload = await apiAccess.post('/picture/upload', uploadData);
       await apiAccess.post('add-discount', data);
+    //   await fetch('http://localhost:5000/api/picture/upload', {
+    //   method: 'POST',
+    //   body: uploadData,
+    // });
       history.push('/discounts');
     }catch(err){
       console.log(err);
     }
   };
 
-  const uploadFile = async (e) => {
-    const uploadData = new FormData();
-    console.log(e.target.files[0]);
-    uploadData.append("imageUrl", e.target.files[0]);
-    console.log(uploadData);
+  // const uploadFile = async (e) => {
+  //   e.preventDefault();
+
+    // const uploadData = new FormData();
+    // console.log(e.target.files[0]);
+    // uploadData.append("imageUrl", e.target.files[0]);
+    // console.log(uploadData.get("imageUrl"));
+
+    // await fetch('http://localhost:5000/api/picture/upload', {
+    //   method: 'POST',
+    //   body: uploadData,
+    // });
     
-    try{
-      const response = await apiAccess.post('/picture/upload', uploadData);
-      console.log(response);
-      setFormData({...formData, picture: response.data.secure_url});
-    }catch(err){
-      console.log(err);
-    }
-  };
+    // try{
+    //   const response = await apiAccess.post('/picture/upload', uploadData);
+    //   console.log(response);
+    //   setFormData({...formData, picture: response.data.secure_url});
+    // }catch(err){
+    //   console.log(err);
+    // }
+  // };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -75,6 +90,10 @@ const CreateDiscounts = () => {
 
   const handleSelectRestaurant  = (e) => {
     setFormData({...formData, owner: e.target.value})
+  }
+
+  const handleFormChange = (e) => {
+    setFormData({...formData, picture: e.target.files[0]})
   }
 
   console.log(formData)
@@ -125,7 +144,7 @@ const CreateDiscounts = () => {
             Foto<span>*</span>{" "}
             <button onClick={handleClick}>
               <FiPlusCircle size="18" color="#FAAF40" />
-              <input type="file" name='picture' id="picture" ref={inputFile} style={{display: "none"}} onChange={uploadFile} />
+              <input type="file" name='picture' id="picture" ref={inputFile} style={{display: "none"}} onChange={handleFormChange} />
             </button>
           </label>
         </div>
