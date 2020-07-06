@@ -44,35 +44,26 @@ const CreateDiscounts = () => {
     const { owner, title, description, picture, expiration } = formData;
     const data = { owner, title, description, picture, expiration };
 
-    const uploadData = new FormData();
-    uploadData.append("imageUrl", picture);
-
     console.log(data);
     try{
-      const pictureUpload = await apiAccess.post('/picture/upload', uploadData);
+      await uploadFile();
       await apiAccess.post('add-discount', data);
-    //   await fetch('http://localhost:5000/api/picture/upload', {
-    //   method: 'POST',
-    //   body: uploadData,
-    // });
       history.push('/discounts');
     }catch(err){
       console.log(err);
     }
   };
 
-  // const uploadFile = async (e) => {
-  //   e.preventDefault();
+  const uploadFile = async () => {
+    const { picture } = formData;
 
-    // const uploadData = new FormData();
-    // console.log(e.target.files[0]);
-    // uploadData.append("imageUrl", e.target.files[0]);
-    // console.log(uploadData.get("imageUrl"));
+    const uploadData = new FormData();
+    uploadData.append("imageUrl", picture);
 
-    // await fetch('http://localhost:5000/api/picture/upload', {
-    //   method: 'POST',
-    //   body: uploadData,
-    // });
+    await fetch('http://localhost:5000/api/picture/upload', {
+      method: 'POST',
+      body: uploadData,
+    });
     
     // try{
     //   const response = await apiAccess.post('/picture/upload', uploadData);
@@ -81,7 +72,7 @@ const CreateDiscounts = () => {
     // }catch(err){
     //   console.log(err);
     // }
-  // };
+  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -92,7 +83,7 @@ const CreateDiscounts = () => {
     setFormData({...formData, owner: e.target.value})
   }
 
-  const handleFormChange = (e) => {
+  const handlePictureChange = (e) => {
     setFormData({...formData, picture: e.target.files[0]})
   }
 
@@ -144,7 +135,7 @@ const CreateDiscounts = () => {
             Foto<span>*</span>{" "}
             <button onClick={handleClick}>
               <FiPlusCircle size="18" color="#FAAF40" />
-              <input type="file" name='picture' id="picture" ref={inputFile} style={{display: "none"}} onChange={handleFormChange} />
+              <input type="file" name='picture' id="picture" ref={inputFile} style={{display: "none"}} onChange={handlePictureChange} />
             </button>
           </label>
         </div>
