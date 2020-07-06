@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const PointRules = () => {
   return (
     <div className="rules--container">
-      <Link className='return-btn' to="/">
+      <Link className='return-btn' to='/user-profile'>
         <FiChevronLeft size="20" color="#fff" />
       </Link>
 

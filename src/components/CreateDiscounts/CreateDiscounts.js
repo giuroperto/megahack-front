@@ -7,7 +7,7 @@ import apiAccess from '../services/api-access';
 const CreateDiscounts = () => {
 
   const [selectedOwner, setSelectedOwner] = useState('');
-  const [owner, setOwner] = useState([]);
+  const [apiRestaurantData, setApiRestaurantData] = useState([]);
   const [formData, setFormData] = useState({
     owner: '',
     title: '',
@@ -25,7 +25,7 @@ const CreateDiscounts = () => {
     try {
       const response = await apiAccess.get('/allbusiness');
       console.log(response.data);
-      setOwner(response.data);
+      setApiRestaurantData(response.data);
     } catch (err) {
       console.log("Error while accessing API Data:", err);
     }
@@ -104,7 +104,7 @@ const CreateDiscounts = () => {
 
   return (
     <div className="create-discounts--container">
-      <h2 className='app-name'>Nome do App</h2>
+      <h2 className='app-name'>Thykhe</h2>
       <div className="client-name">
         <h3>
           E aí, <span>Jorge Santos</span>!
@@ -125,7 +125,7 @@ const CreateDiscounts = () => {
             Estabelecimento<span>*</span>
             <select name="owner" id="owner" value={formData.owner} onChange={handleSelectRestaurant}>
             <option value="0">Selecione seu restaurante</option>
-              {owner.map(restaurant => {
+              {apiRestaurantData.map(restaurant => {
                 return <option value={restaurant._id}>{restaurant.name}</option>
               })}
             </select>

@@ -1,0 +1,17 @@
+@media only screen and (max-width: 787px) {
+  .social-login--container {
+    background: #000;
+    height: 100vh;
+    padding-top: 10px; }
+  .social-login--container h4 {
+    color: #FAAF40;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px; }
+  .social-login-buttons {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .social-login--container button {
+    margin-bottom: 20px; } }
