@@ -6,6 +6,7 @@ import apiAccess from '../services/api-access';
 
 const CreateRestaurants = () => {
 
+
   const [formData, setFormData] = useState({
     name: '',
     address: '',
@@ -65,6 +66,8 @@ const CreateRestaurants = () => {
 
 
   console.log(formData)
+
+
 
 
   return (

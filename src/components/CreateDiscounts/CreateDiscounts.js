@@ -44,37 +44,47 @@ const CreateDiscounts = () => {
     const { owner, title, description, picture, expiration } = formData;
     const data = { owner, title, description, picture, expiration };
 
-    console.log(data)
+    console.log(data);
+
+    // try{
+    //   let pictureCloudinary = await Promise.all(uploadFile());
+    //   let changeState = setFormData({...formData, picture: pictureCloudinary});
+    //   await Promise.all(changeState);
+    //   apiAccess.post('add-discount', data);
+    //   history.push('/discounts');
+    // }catch(err){
+    //   console.log(err);
+    // }
+
     try{
       await apiAccess.post('add-discount', data);
-      //TODO redirect para todos descontos
       history.push('/discounts');
     }catch(err){
       console.log(err);
     }
   };
 
-  const uploadFile = async (e) => {
-    const uploadData = new FormData();
-    console.log(e.target);
+  // const uploadFile = async () => {
+  //   const { picture } = formData;
+
+  //   const uploadData = new FormData();
+  //   uploadData.append("imageUrl", picture);
+
+  //   const response = await fetch('http://localhost:5000/api/picture/upload', {
+  //     method: 'POST',
+  //     body: uploadData,
+  //   });
+
+  //   return response;
+    
     // try{
-    //   await apiAccess.post('/picture/upload', theFile);
+    //   const response = await apiAccess.post('/picture/upload', uploadData);
+    //   console.log(response);
+    //   setFormData({...formData, picture: response.data.secure_url});
     // }catch(err){
     //   console.log(err);
     // }
-  };
-
-  // const uploadData = new FormData();
-  //   let { name } = event.target.files[0];
-  //   uploadData.append("imageUrl", event.target.files[0]);
-  //   this.apiEndpoints.handleUpload(uploadData)
-  //   .then(response => {
-  //       this.setState({ picture: response.data.secure_url, pictureName: name });
-  //     })
-  //     .catch(err => {
-  //       console.log("Error while uploading the file: ", err);
-  //     });
-
+  // };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -84,6 +94,10 @@ const CreateDiscounts = () => {
   const handleSelectRestaurant  = (e) => {
     setFormData({...formData, owner: e.target.value})
   }
+
+  // const handlePictureChange = (e) => {
+  //   setFormData({...formData, picture: e.target.files[0]})
+  // }
 
   console.log(formData)
   console.log(selectedOwner)
@@ -133,7 +147,7 @@ const CreateDiscounts = () => {
             Foto<span>*</span>{" "}
             <button onClick={handleClick}>
               <FiPlusCircle size="18" color="#FAAF40" />
-              <input type="file" name='picture' id="picture" ref={inputFile} style={{display: "none"}} onChange={uploadFile} />
+              <input type="file" name='picture' id="picture" ref={inputFile} style={{display: "none"}} onChange={handleInputChange} />
             </button>
           </label>
         </div>
