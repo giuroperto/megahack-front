@@ -14,4 +14,6 @@
     flex-direction: column;
     align-items: center; }
   .social-login--container button {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .invisible-link {
+    color: #000; } }
