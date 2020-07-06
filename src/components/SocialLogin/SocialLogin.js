@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FacebookLogin from 'react-facebook-login';
 import { GoogleLogin } from 'react-google-login';
+import { Link } from 'react-router-dom';
 
 import '../../css/SocialLogin.css';
 // import config from '../../config.json';
@@ -67,6 +68,8 @@ class Home extends Component {
                   fields="name,email,picture"
                   callback={this.facebookResponse}
                   icon="fa-facebook" />
+
+                  <Link className='invisible-link' to='/user-profile'>PROFILE</Link>
 
    
 
