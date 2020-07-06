@@ -3,7 +3,7 @@ import FacebookLogin from 'react-facebook-login';
 import { GoogleLogin } from 'react-google-login';
 
 import '../../css/SocialLogin.css';
-import config from '../../config.json';
+// import config from '../../config.json';
 
 
 class Home extends Component {
