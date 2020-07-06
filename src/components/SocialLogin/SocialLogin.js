@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FacebookLogin from 'react-facebook-login';
 import { GoogleLogin } from 'react-google-login';
+import config from '../../config.json';
 
 class Home extends Component {
   constructor(props){
@@ -46,13 +47,13 @@ class Home extends Component {
       (
           <div>
               <FacebookLogin
-                  appId={process.env.FACEBOOK_APP_ID}
+                  appId={config.FACEBOOK_APP_ID}
                   autoLoad={false}
                   fields="name,email,picture"
                   callback={this.facebookResponse}
                   icon="fa-facebook" />
               <GoogleLogin
-                  clientId={process.env.GOOGLE_CLIENT_ID}
+                  clientId={config.GOOGLE_CLIENT_ID}
                   buttonText="Login"
                   onSuccess={this.googleResponse}
                   onFailure={this.onFailure}
