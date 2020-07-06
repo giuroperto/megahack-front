@@ -4,10 +4,11 @@
   .restaurant-text-info h3, .restaurant-nav ul > li > button, .rating > div > p > span {
     font-weight: 800; }
   .restaurant-profile--container {
-    height: 100vh;
+    height: 100%;
     background-color: #000;
     color: #fff;
-    padding-top: 10px; }
+    padding-top: 10px;
+    padding-bottom: 50px; }
   .restaurant-profile--container a {
     margin-left: 20px; }
   .restaurant-info-box {
@@ -19,13 +20,13 @@
     height: 80px;
     object-fit: cover;
     border-radius: 100%;
-    border: 1px solid #FAAF40; }
+    border: 1px solid #faaf40; }
   .restaurant-text-info {
     font-size: 14px;
     line-height: 21px;
     padding-left: 24px; }
   .restaurant-text-info h3 {
-    font-family: 'Zilla Slab', serif;
+    font-family: "Zilla Slab", serif;
     font-size: 20px; }
   .restaurant-info-box p {
     font-size: 10px; }
@@ -38,7 +39,7 @@
     background: none;
     color: #fff;
     border: none;
-    font-family: 'Zilla Slab', serif;
+    font-family: "Zilla Slab", serif;
     font-size: 16px; }
   .rating {
     width: 300px;
@@ -57,9 +58,27 @@
   .rating > div > p > span {
     font-size: 12px; }
   .rating:after {
-    content: '';
+    content: "";
     display: block;
     width: 314px;
     height: 1px;
-    background: #FAAF40;
-    margin: 0 auto 10px auto; } }
+    background: #faaf40;
+    margin: 0 auto 10px auto; }
+  .restaurant-menu img {
+    padding: 15px;
+    height: 390px;
+    width: 360px; }
+  .restaurant-midia {
+    padding-left: 15px;
+    padding-bottom: 20px; }
+  .restaurant-midia img {
+    width: 100%;
+    height: 100px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    /* 3 columns */
+    grid-template-rows: repeat(2, 150px);
+    /* 3 rows  */
+    grid-gap: 0 30px;
+    /* 50 pixels of space added between rows and 30 pixels added between columns  */ } }

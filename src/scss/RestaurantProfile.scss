@@ -1,7 +1,5 @@
-
-
-@media only screen and (max-width: 787px) { 
-  $base-yellow: #FAAF40;
+@media only screen and (max-width: 787px) {
+  $base-yellow: #faaf40;
 
   %p-weight {
     font-weight: 300;
@@ -12,11 +10,12 @@
   }
 
   .restaurant-profile--container {
-    height: 100vh;
+    height: 100%;
     background-color: #000;
-    color:#fff;
+    color: #fff;
     padding-top: 10px;
-  } 
+    padding-bottom: 50px;
+  }
 
   .restaurant-profile--container a {
     margin-left: 20px;
@@ -27,15 +26,15 @@
     justify-content: center;
     padding: 30px 0 10px 0;
   }
-  
+
   .restaurant-info-box img {
     width: 80px;
     height: 80px;
     object-fit: cover;
     border-radius: 100%;
-    border: 1px solid #FAAF40;
+    border: 1px solid #faaf40;
   }
-  
+
   .restaurant-text-info {
     @extend %p-weight;
     font-size: 14px;
@@ -45,7 +44,7 @@
 
   .restaurant-text-info h3 {
     @extend %span-weight;
-    font-family: 'Zilla Slab', serif;
+    font-family: "Zilla Slab", serif;
     font-size: 20px;
   }
 
@@ -64,7 +63,7 @@
     background: none;
     color: #fff;
     border: none;
-    font-family: 'Zilla Slab', serif;
+    font-family: "Zilla Slab", serif;
     @extend %span-weight;
     font-size: 16px;
   }
@@ -97,15 +96,42 @@
     @extend %span-weight;
     font-size: 12px;
   }
-  
+
   .rating:after {
-    content: '';
+    content: "";
     display: block;
     width: 314px;
     height: 1px;
     background: $base-yellow;
     margin: 0 auto 10px auto;
-    }
-  
+  }
+
+  .restaurant-menu img {
+    padding: 15px;
+    height: 390px;
+    width: 360px;
+  }
+
+  .restaurant-midia {
+    padding-left: 15px;
+    padding-bottom: 20px;
+  }
+
+  .restaurant-midia img {
+    width: 100%;
+    height: 100px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 150px); /* 3 columns */
+    grid-template-rows: repeat(2, 150px); /* 3 rows  */
+    grid-gap: 0 30px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
+  }
+
+  .grid-item {
+    // border: thin #faaf40 solid;
+    // padding: 10px;
+  }
 
 }
