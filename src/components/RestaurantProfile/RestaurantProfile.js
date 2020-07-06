@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import restaurantImg from '../../assets/img/bar-do-ze.jpeg';
 
 const RestaurantProfile = () => {
+
   return (
     <div className="restaurant-profile--container">
       <Link className='return-btn' to='/'>

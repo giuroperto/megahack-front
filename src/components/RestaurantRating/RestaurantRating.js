@@ -9,7 +9,7 @@ import restaurantImg from '../../assets/img/bar-do-ze.jpeg';
 const RestaurantRating = () => {
   return (
     <div className="restaurant-rating--container">
-      <Link className='return-btn' to='/'>
+      <Link className='return-btn' to='/user-profile'>
               <FiChevronLeft size="20" color="#fff" />
             </Link>
       <div className="restaurant-info-box">

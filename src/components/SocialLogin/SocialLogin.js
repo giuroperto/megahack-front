@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FacebookLogin from 'react-facebook-login';
 import { GoogleLogin } from 'react-google-login';
+import '../../css/SocialLogin.css';
 
 class Home extends Component {
   constructor(props){
@@ -44,20 +45,28 @@ class Home extends Component {
           </div>
       ) :
       (
-          <div>
+
+        <div className="social-login--container">
+        <h2 className='app-name'>Thykhe</h2>
+        <div className='social-login-buttons'>
+
+        <h4>Faça seu login:</h4>
+              
+              <GoogleLogin
+                  clientId={process.env.GOOGLE_CLIENT_ID}
+                  buttonText="Login with Google Account"
+                  onSuccess={this.googleResponse}
+                  onFailure={this.onFailure}
+              />
               <FacebookLogin
                   appId={process.env.FACEBOOK_APP_ID}
                   autoLoad={false}
                   fields="name,email,picture"
                   callback={this.facebookResponse}
                   icon="fa-facebook" />
-              <GoogleLogin
-                  clientId={process.env.GOOGLE_CLIENT_ID}
-                  buttonText="Login"
-                  onSuccess={this.googleResponse}
-                  onFailure={this.onFailure}
-              />
           </div>
+        </div>
+          
       );
     return(
       <div className="App">

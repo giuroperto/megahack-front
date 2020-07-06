@@ -7,7 +7,7 @@ import profileImg from '../../assets/img/profile.jpeg';
 const UserProfile = () => {
   return (
     <div className="user-profile--container">
-      <h2 className='app-name'>Nome do App</h2>
+      <h2 className='app-name'>Thykhe</h2>
       
       <div className="user-info-box">
         <img src={profileImg} alt="foto-de-perfil"/>
@@ -53,7 +53,7 @@ const UserProfile = () => {
 
   <div className="user-nav">
     <p>Troque seus pontos!</p>
-    <Link to='/'><h4>cupons disponíveis</h4></Link>
+    <Link to='/discounts'><h4>cupons disponíveis</h4></Link>
   </div>
 
   <div className="user-nav">
@@ -63,17 +63,17 @@ const UserProfile = () => {
 
   <div className="user-nav">
     <p>Troque seus pontos!</p>
-    <Link to='/'><h4>regras de pontuação</h4></Link>
+    <Link to='/rules'><h4>regras de pontuação</h4></Link>
   </div>
 
   <div className="user-nav">
     <p>Mande seu feedback!</p>
-    <Link to='/'><h4>avaliar estabelecimento</h4></Link>
+    <Link to='/restaurant-rating'><h4>avaliar estabelecimento</h4></Link>
   </div>
 
   <div className="user-nav">
     <p>Está num estabeleciomento que ainda não está disponível na plataforma?</p>
-    <Link to='/'><h4>criar um novo estabelecimento</h4></Link>
+    <Link to='/create-restaurants'><h4>criar um novo estabelecimento</h4></Link>
   </div>
     </div>
   );

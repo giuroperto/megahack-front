@@ -26,7 +26,7 @@ const Discounts = () => {
 
   return(
       <div className="discounts-container">
-            <Link className='return-btn' to='/'>
+            <Link className='return-btn' to='/user-profile'>
               <FiChevronLeft size="20" color="#fff" />
             </Link>
 
