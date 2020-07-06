@@ -3,8 +3,7 @@ import FacebookLogin from 'react-facebook-login';
 import { GoogleLogin } from 'react-google-login';
 
 import '../../css/SocialLogin.css';
-
-import config from '../../config.json';
+// import config from '../../config.json';
 
 
 class Home extends Component {
@@ -63,7 +62,7 @@ class Home extends Component {
                   onFailure={this.onFailure}
               />
               <FacebookLogin
-                  appId={config.FACEBOOK_APP_ID}
+                  appId={process.env.FACEBOOK_APP_ID}
                   autoLoad={false}
                   fields="name,email,picture"
                   callback={this.facebookResponse}
