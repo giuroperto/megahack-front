@@ -45,8 +45,18 @@ const CreateDiscounts = () => {
     const data = { owner, title, description, picture, expiration };
 
     console.log(data);
+
+    // try{
+    //   let pictureCloudinary = await Promise.all(uploadFile());
+    //   let changeState = setFormData({...formData, picture: pictureCloudinary});
+    //   await Promise.all(changeState);
+    //   apiAccess.post('add-discount', data);
+    //   history.push('/discounts');
+    // }catch(err){
+    //   console.log(err);
+    // }
+
     try{
-      await uploadFile();
       await apiAccess.post('add-discount', data);
       history.push('/discounts');
     }catch(err){
@@ -54,16 +64,18 @@ const CreateDiscounts = () => {
     }
   };
 
-  const uploadFile = async () => {
-    const { picture } = formData;
+  // const uploadFile = async () => {
+  //   const { picture } = formData;
 
-    const uploadData = new FormData();
-    uploadData.append("imageUrl", picture);
+  //   const uploadData = new FormData();
+  //   uploadData.append("imageUrl", picture);
 
-    await fetch('http://localhost:5000/api/picture/upload', {
-      method: 'POST',
-      body: uploadData,
-    });
+  //   const response = await fetch('http://localhost:5000/api/picture/upload', {
+  //     method: 'POST',
+  //     body: uploadData,
+  //   });
+
+  //   return response;
     
     // try{
     //   const response = await apiAccess.post('/picture/upload', uploadData);
@@ -72,7 +84,7 @@ const CreateDiscounts = () => {
     // }catch(err){
     //   console.log(err);
     // }
-  };
+  // };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -83,9 +95,9 @@ const CreateDiscounts = () => {
     setFormData({...formData, owner: e.target.value})
   }
 
-  const handlePictureChange = (e) => {
-    setFormData({...formData, picture: e.target.files[0]})
-  }
+  // const handlePictureChange = (e) => {
+  //   setFormData({...formData, picture: e.target.files[0]})
+  // }
 
   console.log(formData)
   console.log(selectedOwner)
@@ -135,7 +147,7 @@ const CreateDiscounts = () => {
             Foto<span>*</span>{" "}
             <button onClick={handleClick}>
               <FiPlusCircle size="18" color="#FAAF40" />
-              <input type="file" name='picture' id="picture" ref={inputFile} style={{display: "none"}} onChange={handlePictureChange} />
+              <input type="file" name='picture' id="picture" ref={inputFile} style={{display: "none"}} onChange={handleInputChange} />
             </button>
           </label>
         </div>
