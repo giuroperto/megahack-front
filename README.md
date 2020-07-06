@@ -45,7 +45,7 @@ This is the prototype for the solution we developed for the MEGA HACK 3.0 hackat
 
 ## Our team
 
-**NAME OF THE PROJECT** was created by:
+**TYKHE** was created by:
 
 |<img src="https://media-exp1.licdn.com/dms/image/C5603AQF_vneV9MrXdQ/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=XBMkASOtLJdpiFU6nHFpUPuXD9BI_cJmF2iqO9vHbYg" width="115"><br/> [**Fernando Borrelli**](https://www.linkedin.com/in/fernando-borrelli/) |<img src="https://media-exp1.licdn.com/dms/image/C4D03AQEidRW39hPwvA/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=GrV9ioZBp9uyX3Zz7uj_uC-FY-wVuOTspSB8dRRCWUU" width="115"><br/> [**Giulia Roperto**](https://www.linkedin.com/in/giuliaroperto/) |<img src="https://media-exp1.licdn.com/dms/image/C4E03AQFfqw6srZSseA/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=wfs1wqPzJqDVzOM8EupZydLhObzkMCN9Uv5ImgPhzyU" width="115"><br/> [**Hugo Habl**](https://www.linkedin.com/in/hugo-habl/) |<img src="https://media-exp1.licdn.com/dms/image/C4D03AQHMBjcsiXDK5g/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=k2rJLVD2UPBVYAON_BFNA4_MRyAdZR1BZXmrEi_Ppac" width="115"><br/> [**Jorge Sato**](https://www.linkedin.com/in/jorge-sato-81969522/) |<img src="https://media-exp1.licdn.com/dms/image/C4D03AQHinh-R2X_Qkg/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=-vPNDnJtNhFN28M8ElRoumQux1K8wJ_jxZ1DNYGpsUg" width="115"><br/> [**Vinícius Salinas**](https://www.linkedin.com/in/vinicius-salinas/) |
 |---|---|---|---|---|
