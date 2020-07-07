@@ -1,4 +1,3 @@
-![AppVeyor](https://img.shields.io/appveyor/build/giuroperto/megahack-front)
 ![GitHub top language](https://img.shields.io/github/languages/top/giuroperto/megahack-front)
 [![GitHub license](https://img.shields.io/github/license/giuroperto/megahack-front)](https://github.com/giuroperto/megahack-front/blob/dev/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/giuroperto/megahack-front)](https://github.com/giuroperto/megahack-front/stargazers)
