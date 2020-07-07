@@ -16,6 +16,8 @@ This is the prototype for the solution we developed for the MEGA HACK 3.0 hackat
 
 #### App URL: https://mega-hack-tykhe.netlify.app/
 
+### [:movie_camera: Watch our pitch! :brazil:](https://www.youtube.com/watch?v=ChX__RNtMA0&feature=youtu.be)
+
 
 ## The App
 
