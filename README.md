@@ -32,8 +32,6 @@ In addition, restaurants can provide digital menus and photos of the establishme
 - JavaScript ES6
 - Hooks
 - React
-- CSS3
-- HTML5
 - SASS
 - Gulp
 
