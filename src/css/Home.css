@@ -1,4 +1,18 @@
+@media (min-width: 788px) {
+  .only-desktop {
+    color: black;
+    font-size: 50px;
+    width: 70vw; }
+  .home-container h1 {
+    display: none; }
+  .home-container h2 {
+    display: none; }
+  .home-container a {
+    display: none; } }
+
 @media only screen and (max-width: 787px) {
+  .only-desktop {
+    display: none; }
   .home-container h1 {
     font-family: 'Zilla Slab', serif;
     color: #FAAF40;
