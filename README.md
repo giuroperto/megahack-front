@@ -3,7 +3,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/giuroperto/megahack-front)](https://github.com/giuroperto/megahack-front/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/giuroperto/megahack-front)](https://github.com/giuroperto/megahack-front/network)
 
-# **TYKHE** (PROTOTYPE)
+# **TYKHE** (PROTOTYPE) :zap:
 
 ## Challenge
 
@@ -18,7 +18,7 @@ This is the prototype for the solution we developed for the [MEGA HACK 3.0](http
 ### [:movie_camera: Watch our pitch! :brazil:](https://www.youtube.com/watch?v=ChX__RNtMA0&feature=youtu.be)
 
 
-## The App
+## The App :fork_and_knife:
 
 The application aims at evaluating restaurants, with regard to the security and cleaning measures implemented to help prevent COVID-19 outbreak. The evaluation database is fed by users / clients who, in turn, earn points to be exchanged for discounts at restaurants registered on the platform.
 
