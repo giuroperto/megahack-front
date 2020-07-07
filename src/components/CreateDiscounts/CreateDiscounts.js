@@ -109,6 +109,7 @@ const CreateDiscounts = () => {
         <h3>
           E aí, <span>Jorge Santos</span>!
         </h3>
+        <Link to='/login' className='invisible-link'>Login</Link>
         <p>
           Crie descontos, promoções e ofereça muito mais aos seus clientes em
           troca de pontos!
