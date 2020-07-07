@@ -5,6 +5,14 @@
 
 # **TYKHE** (PROTOTYPE) :zap:
 
+![](/src/assets/screenshot/1.png)
+![](/src/assets/screenshot/2.png)
+![](/src/assets/screenshot/4.png)
+![](/src/assets/screenshot/5.png)
+![](/src/assets/screenshot/6.png)
+![](/src/assets/screenshot/7.png)
+![](/src/assets/screenshot/8.png)
+
 ## Challenge
 
 The challenge proposed by SEBRAE and MCTIC (Ministry of Science, Technology, Innovations and Communications) was focused in the foodservice sector and questioned how could companies conquer back their consumers after quarantine. Thus, our group came up with ideas of what solutions could contribute with the consumers' experiences and the success of businesses in the catering industry post COVID-19, and the final solution we came up with was as it follows.
