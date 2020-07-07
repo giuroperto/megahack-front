@@ -4,6 +4,7 @@ import { GoogleLogin } from 'react-google-login';
 import { Link } from 'react-router-dom';
 
 import '../../css/SocialLogin.css';
+//TODO comment out
 // import config from '../../config.json';
 
 
@@ -57,12 +58,15 @@ class Home extends Component {
         <h4>Faça seu login:</h4>
               
               <GoogleLogin
+              //TODO go back to .env
                   clientId={process.env.GOOGLE_CLIENT_ID}
+                  // clientId={config.GOOGLE_CLIENT_ID}
                   buttonText="Login with Google Account"
                   onSuccess={this.googleResponse}
                   onFailure={this.onFailure}
               />
               <FacebookLogin
+              //TODO go back to .env
                   appId={process.env.FACEBOOK_APP_ID}
                   autoLoad={false}
                   fields="name,email,picture"
