@@ -14,7 +14,7 @@ The challenge proposed by SEBRAE and MCTIC (Ministry of Science, Technology, Inn
 This is the prototype for the solution we developed for the MEGA HACK 3.0 hackathon which was promoted by Shawee and had Gr1d, Github, Zenvia, Sai do Papel and Trybe as partners.
 (https://www.megahack.com.br/)
 
-#### App URL: https://mega-hack-tykhe.netlify.app/
+### [:iphone: Try our app! :brazil:](https://mega-hack-tykhe.netlify.app/)
 
 ### [:movie_camera: Watch our pitch! :brazil:](https://www.youtube.com/watch?v=ChX__RNtMA0&feature=youtu.be)
 
