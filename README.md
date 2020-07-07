@@ -20,20 +20,22 @@ This is the prototype for the solution we developed for the [MEGA HACK 3.0](http
 
 ## The App
 
+The application aims at evaluating restaurants, with regard to the security and cleaning measures implemented to help prevent COVID-19 outbreak. The evaluation database is fed by users / clients who, in turn, earn points to be exchanged for discounts at restaurants registered on the platform.
 
-#### Step-by-step
-
-
+In addition, restaurants can provide digital menus and photos of the establishment, in addition to creating new discounts to be enjoyed by their customers.
 
 #### Back-end
 [See repo](https://github.com/giuroperto/megahack-back)
 
 #### Front-end
 
-- JavaScript
+- JavaScript ES6
+- Hooks
 - React
-- CSS
-- HTML
+- CSS3
+- HTML5
+- SASS
+- Gulp
 
 ## Contributing
 >This is an open-source and free software. Please, feel free to collaborate =).
@@ -46,7 +48,7 @@ This is the prototype for the solution we developed for the [MEGA HACK 3.0](http
 
 ## Our team
 
-**TYKHE** was created by:
+**TYKHE** was created with :heart: by:
 
 |<img src="https://media-exp1.licdn.com/dms/image/C5603AQF_vneV9MrXdQ/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=XBMkASOtLJdpiFU6nHFpUPuXD9BI_cJmF2iqO9vHbYg" width="115"><br/> [**Fernando Borrelli<br/> :computer: Dev**](https://www.linkedin.com/in/fernando-borrelli/) |<img src="https://media-exp1.licdn.com/dms/image/C4D03AQEidRW39hPwvA/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=GrV9ioZBp9uyX3Zz7uj_uC-FY-wVuOTspSB8dRRCWUU" width="115"><br/> [**Giulia Roperto<br/> :computer: Dev**](https://www.linkedin.com/in/giuliaroperto/) |<img src="https://media-exp1.licdn.com/dms/image/C4E03AQFfqw6srZSseA/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=wfs1wqPzJqDVzOM8EupZydLhObzkMCN9Uv5ImgPhzyU" width="115"><br/> [**Hugo Habl<br/> :moneybag: Business**](https://www.linkedin.com/in/hugo-habl/) |<img src="https://media-exp1.licdn.com/dms/image/C4D03AQHMBjcsiXDK5g/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=k2rJLVD2UPBVYAON_BFNA4_MRyAdZR1BZXmrEi_Ppac" width="115"><br/> [**Jorge Sato<br/> :dart: Marketing**](https://www.linkedin.com/in/jorge-sato-81969522/) |<img src="https://media-exp1.licdn.com/dms/image/C4D03AQHinh-R2X_Qkg/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=-vPNDnJtNhFN28M8ElRoumQux1K8wJ_jxZ1DNYGpsUg" width="115"><br/> [**Vinícius Salinas<br/> :art: UX**](https://www.linkedin.com/in/vinicius-salinas/) |
 |---|---|---|---|---|
