@@ -5,13 +5,10 @@
 
 # **TYKHE** (PROTOTYPE) :zap:
 
-![](/src/assets/screenshot/1.png)
-![](/src/assets/screenshot/2.png)
-![](/src/assets/screenshot/4.png)
-![](/src/assets/screenshot/5.png)
-![](/src/assets/screenshot/6.png)
-![](/src/assets/screenshot/7.png)
-![](/src/assets/screenshot/8.png)
+<p  align="center"><img src="/src/assets/screenshot/1.png" height="400px"></p>
+
+|![](/src/assets/screenshot/2.png)|![](/src/assets/screenshot/4.png)|![](/src/assets/screenshot/5.png)|![](/src/assets/screenshot/6.png)|![](/src/assets/screenshot/7.png)|![](/src/assets/screenshot/8.png)|
+|---|---|---|---|---|---|
 
 ## Challenge
 
